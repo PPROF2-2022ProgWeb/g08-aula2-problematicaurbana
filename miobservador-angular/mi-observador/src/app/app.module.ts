@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -24,7 +25,7 @@ const rutas:Routes=[
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +33,7 @@ const rutas:Routes=[
     LayoutsModule,
     PagesModule,
     RouterModule.forRoot(rutas),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

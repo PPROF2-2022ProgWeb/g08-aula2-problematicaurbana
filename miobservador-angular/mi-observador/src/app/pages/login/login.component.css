@@ -7,7 +7,7 @@ h1{
     text-shadow: 2px 2px #ABABAB;
  }
  
- h3{
+ h2{
    
    font-family: 'Kanit', sans-serif;
    text-align: center;
@@ -47,26 +47,26 @@ h1{
    margin-left: 15%;
  }
  
- button{
-   background-color: #FFB366;
-   border-radius: 10px;
-   border-color: #FFB366;
-   border-width: 1px;
-   font-family: 'Kanit', sans-serif;
-   font-size: 150%;
-   font-weight: bold;
-   width: 8rem;
-   height: 2.2rem;
-   display: block;
-   margin: 0 auto;
-   margin-top: 0.8rem;
-   margin-bottom: 4rem;
- }
- 
- button:hover{
-   background-color: darkorange;
-   cursor: pointer;
- }
+ #btn-login {
+  font-weight: bold;
+  border-width: 1px;
+  font-size:150%;
+  background-color: #ffddbb;
+  font-weight: bold;
+  width: 25%;
+  height: 10%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+
+}
+
+#btn-login:hover{
+  background-color: darkorange;
+  cursor: pointer;
+}
  
 
  

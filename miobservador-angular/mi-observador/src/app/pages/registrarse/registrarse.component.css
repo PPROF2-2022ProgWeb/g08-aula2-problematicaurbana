@@ -46,7 +46,7 @@
     margin-bottom: 2rem;
     margin-left: 15%;
   }
-  
+  /*Botones W and H con % hasta solucioar responsive*/
   button{
     background-color: #FFB366;
     border-radius: 10px;
@@ -55,11 +55,11 @@
     font-family: 'Kanit', sans-serif;
     font-size: 150%;
     font-weight: bold;
-    width: 8rem;
-    height: 2.2rem;
+    width: 25%;
+    height: 10%;
     display: block;
     margin: 0 auto;
-    margin-top: 0.8rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
   }
   

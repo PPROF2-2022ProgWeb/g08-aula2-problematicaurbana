@@ -32,7 +32,7 @@
   </p>
   <p>
     Contraseña * (8 caracteres) <br/>
-    <input type="text" formControlName="contrasenia">
+    <input type="password" formControlName="contrasenia">
   </p>
   <!--validacion de campo contrasenia. para el caso en el que se hya ingresado un valor o el mismo se encuentre vacio-->
   <div *ngIf="form.errors && form.touched">
@@ -45,7 +45,7 @@
   </div>
   <p>
     Confirmar Contraseña *<br/>
-    <input type="text" formControlName="confirmarContrasenia">
+    <input type="password" formControlName="confirmarContrasenia">
   </p>
   
   

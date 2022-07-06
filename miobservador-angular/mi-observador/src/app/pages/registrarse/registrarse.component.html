@@ -1,133 +1,58 @@
-<div class="container py-5" id="contenedor-principal">
-  <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12 mx-auto">
-    <div class="card" id="encabezadoRegistro">
-      <div class="card-header">
-        <h1>Formulario de registro</h1>
-        <h3>Por favor, complete con sus datos</h3>
-      </div>
-    </div>
 
-    <!--Se agrega validación al form con boostrap y js   data-rule-required="true"-->
-    <form id="registro" action="envio-contacto.php" class="needs-validation" method="post" novalidate>
-      <div class="form-row">
-        <div class="form-floating mb-4">
-          <input type="text" maxlength="25" minlenght="2" class="form-control sPadingF" id="nombre" name="nombre"
-            placeholder="nombre" required oninput="campoNombre(this);">
-          <label for="nombre" class="sPaddingI">Nombre *</label>
-          <div class="valid-feedback"></div>
-          <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="form-row">
-          <div class="form-floating mb-4">
-            <input type="text" maxlength="25" class="form-control sPadingF" id="apellido" name="apellido"
-              placeholder="apellido" required oninput="campoApellido(this);">
-            <label for="apellido" class="sPaddingI">Apellido *</label>
-            <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="col pr-0">
-            <div class="form-floating mb-4">
-              <input type="number" maxlength="8" class="form-control sPadingF" id="nroDocumento" name="nroDocumento"
-                placeholder="Documento" required oninput="campoDocumento(this);">
-              <label for="nroDocumento" class="sPaddingI">Documento *</label>
-              <div class="valid-feedback"></div>
-              <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-            </div>
-          </div>
 
-          <div class="col pl-0">
-            <div class="form-floating mb-4">
-              <input type="date" class="form-control sPadingF" onchange="CalcularEdad()" id="fechaNacimiento"
-                name="fechaNacimiento" placeholder="dd/mm/aaaa">
-              <label for="fechaNacimiento" class="sPaddingI sPaddingIFecha">Fecha de Nacimiento</label>
-            </div>
-          </div>
-
-          <div class="col pl-0">
-            <div class="form-floating mb-4">
-              <input type="text" class="form-control sPadingF" id="EdadActual" value="Edad  " name="EdadActual"
-                readonly>
-            </div>
-          </div>
-
-        </div>
-
-        <!--<div class="form-row" >
-        <select class="form-select mb-3" id="provincia" aria-label="Default select example" required>
-          <option selected>Seleccione Provincia</option>
-          Muestra de datos. Las provincias se deben obtener de la base de datos
-          <option value="31">Córdoba</option>
-          <option value="2">La Rioja</option>
-              <option value="3">Santa Fé</option>
-        </select>
-        <div class="valid-feedback"></div>
-        <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-      </div> -->
-
-        <div class="form-row">
-          <select class="form-select mb-3" name="idCiudad" id="ciudad" aria-label="Default select example" required>
-            <option selected>Seleccione Ciudad</option>
-            <?php print carga_combo();?>
-          </select>
-          <div class="valid-feedback"></div>
-          <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
-            <label for="email" class="sPaddingI">Correo Electrónico *</label>
-          </div>
-          <div class="valid-feedback"></div>
-          <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="confirmarEmail" name="confirmarEmail"
-              placeholder="Confirmar Correo Electrónico">
-            <label for="confirmarEmail" class="sPaddingI">Confirmar Correo Electrónico *</label>
-            <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Las correos electrónicos ingresados no coinciden.</div>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-floating mb-3">
-            <input type="password" maxlength="8" class="form-control" id="password" name="password"
-              placeholder="Contraseña" required oninput="campoPassword(this);">
-            <label for="password" class="sPaddingI">Contraseña * (8 caracteres)</label>
-            <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Dato requerido. Complete por favor.</div>
-            <div class="input-group-text" onchange="verPassword()">
-              <input id="verPassword" type="checkbox" /> Ver contraseña
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="confirmarPassword" name="confirmarPassword"
-                placeholder="Confirmar contraseña">
-              <label for="confirmarPassword" class="sPaddingI">Confirmar Contraseña *</label>
-              <div class="invalid-feedback">Las contraseñas ingresadas no coinciden.</div>
-              <div class="input-group-text" onchange="verPasswordConfirm()">
-                <input id="verPassword" type="checkbox" /> Ver contraseña
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="d-grid">
-          <button type="submit" id="btn-register" class="btn btn-register">Registrarme</button>
-          <!--onclick="location.href='carga_datos.html'"-->
-        </div>
- <!--
-
+<h1>Formulario de registro</h1>
+<h3>Por favor, complete con sus datos</h3>
+      
+<form form = "form" (ngSubmit)="save($event)">
+ 
+  <p>
+    Nombre *<br/>
+    <input type="text" formControlName="nombre">
+  </p>
+  <p>
+    Apellido*<br/>
+    <input type="text" formControlName="apellido">
+  </p>
+  <p>
+    Documento*<br/>
+    <input type="text" formControlName="documento">
+  </p>
+  <p>
+    Fecha de Nacimiento<br/>
+    <input type="date" formControlName="fechaNacimiento">
+  </p>
+  
+  <p>
+    Correo Electrónico* <br/>
+    <input type="email" formControlName="email">
+  </p>
+  <p>
+    Confirmar Correo Electrónico* <br/>
+    <input type="email" formControlName="confirmarEmail">
+  </p>
+  <p>
+    Contraseña * (8 caracteres) <br/>
+    <input type="password" formControlName="contrasenia">
+  </p>
+  <!--validacion de campo contrasenia. para el caso en el que se hya ingresado un valor o el mismo se encuentre vacio-->
+  <div *ngIf="form.errors && form.touched">
+    <p *ngIf="form.hasError('required')">
+      Es un campo requerido
+    </p>
+    <p *ngIf="form.hasError('maxlength')">
+      El máximo es de 8 caracteres.
+    </p>
+  </div>
+  <p>
+    Confirmar Contraseña *<br/>
+    <input type="password" formControlName="confirmarContrasenia">
+  </p>
+  
+  
+  <p>
+    <option type="selected" formControlName="ciudad">Seleccione Ciudad</option>
+    <select name="ciudad" ></select>  
+    </p>
+    
+    <button type="submit" [disabled]="form.invalid">Guardar</button>  
 </form>
-</div>
-</form>
--->

@@ -1,0 +1,35 @@
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+#titulo {
+    color:orange;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+#texto {
+
+font-family: 'Kanit', sans-serif;
+text-align: center;
+
+}
+
+#texto2 {
+
+font-family: 'Kanit', sans-serif;
+text-align: center;
+font-weight:bolder;
+color:coral;
+
+}
+
+img{
+  width: 500;
+  height: 500px;
+  filter: drop-shadow(0 3px 5px rgba(172, 168, 168, 0.7))
+}

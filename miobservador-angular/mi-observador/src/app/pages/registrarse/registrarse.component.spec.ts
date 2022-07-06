@@ -3,9 +3,10 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
+
 import { RegistrarseComponent } from './registrarse.component';
 
-describe('RegistrarseComponent', () => {
+describe('registrarseComponent', () => {
   let component: RegistrarseComponent;
   let fixture: ComponentFixture<RegistrarseComponent>;
 

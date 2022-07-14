@@ -1,23 +1,27 @@
-
-*{
-  font-family:Georgia, 'Times New Roman', Times, serif ;
-  font-weight: 50;
-  font-size: 30px;
-}
-
-
-h1 {
-  background-color: rgb(226, 231, 70);
-  display: inline-block;
-  padding: 30px;
-  box-sizing: border-box;
+/*titulo de reporte*/
+h1{
+  font-family: 'kanit',sans-serif ;
+  margin-top: 1rem;
   text-align: center;
-  margin-bottom: 15px;
-
+  text-shadow: 2px  2px #ABABAB;
 }
+
+
+
+/*boton de envio de reporte*/
   button{
-border-radius: 35px;
-border: 6px solid rgb(176, 255, 58);
+    background-color: #ffb366;
+border-radius: 10px;
+border-color: #ffb366;
+border-width: 1px;
+font-family: 'kanit',sans-serif;
+font-size:150%;
+font-weight: bold;
+width: 25%;
+height: 10%;
+display: block;
+margin-top: 2rem;
+margin-bottom: 4rem;
  }
 p{
   text-align: center;

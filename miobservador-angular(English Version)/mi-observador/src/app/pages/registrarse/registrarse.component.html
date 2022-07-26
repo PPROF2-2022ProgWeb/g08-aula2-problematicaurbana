@@ -1,0 +1,58 @@
+
+
+<h1>Formulario de registro</h1>
+<h3>Por favor, complete con sus datos</h3>
+      
+<form form = "form" (ngSubmit)="save($event)">
+ 
+  <p>
+    Nombre *<br/>
+    <input type="text" formControlName="nombre">
+  </p>
+  <p>
+    Apellido*<br/>
+    <input type="text" formControlName="apellido">
+  </p>
+  <p>
+    Documento*<br/>
+    <input type="text" formControlName="documento">
+  </p>
+  <p>
+    Fecha de Nacimiento<br/>
+    <input type="date" formControlName="fechaNacimiento">
+  </p>
+  
+  <p>
+    Correo Electrónico* <br/>
+    <input type="email" formControlName="email">
+  </p>
+  <p>
+    Confirmar Correo Electrónico* <br/>
+    <input type="email" formControlName="confirmarEmail">
+  </p>
+  <p>
+    Contraseña * (8 caracteres) <br/>
+    <input type="password" formControlName="contrasenia">
+  </p>
+  <!--validacion de campo contrasenia. para el caso en el que se hya ingresado un valor o el mismo se encuentre vacio-->
+  <div *ngIf="form.errors && form.touched">
+    <p *ngIf="form.hasError('required')">
+      Es un campo requerido
+    </p>
+    <p *ngIf="form.hasError('maxlength')">
+      El máximo es de 8 caracteres.
+    </p>
+  </div>
+  <p>
+    Confirmar Contraseña *<br/>
+    <input type="password" formControlName="confirmarContrasenia">
+  </p>
+  
+  
+  <p>
+    <option type="selected" formControlName="ciudad">Seleccione Ciudad</option>
+    <select name="ciudad" ></select>  
+    </p>
+    
+    <button type="submit" [disabled]="form.invalid">Guardar</button>  
+</form>

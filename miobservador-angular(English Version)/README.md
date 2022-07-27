@@ -16,6 +16,17 @@ Group:
 
 - Adriana, Lorena
 
+IMPORTANT:
+
+To locate the translated files, go to:
+
+miobservador-angular(English Version)\mi-observador\src\app\pages
+
+(Only view files with "html" extension)
+
+
+Note: The names of the files that are still in Spanish is because modifying them could cause problems in the code developed in the modules.
+
 
 Old Project (Spanish): 
 

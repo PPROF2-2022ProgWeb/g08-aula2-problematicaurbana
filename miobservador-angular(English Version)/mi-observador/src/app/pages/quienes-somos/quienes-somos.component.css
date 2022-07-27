@@ -6,20 +6,20 @@ main{
     align-items: center;
   }
 
-#titulo {
+#title {
     color:orange;
     text-align: center;
     text-shadow: 0.1em 0.1em 0.05em #333;
 }
 
-#texto {
+#text {
 
 font-family: 'Kanit', sans-serif;
 text-align: center;
 
 }
 
-#texto2 {
+#text2 {
 
 font-family: 'Kanit', sans-serif;
 text-align: center;

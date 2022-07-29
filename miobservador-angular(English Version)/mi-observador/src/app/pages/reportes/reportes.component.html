@@ -6,33 +6,27 @@
 
     <div class="card" id="encabezadoLogin">
       <div class="card-header">
-        <h1>incident report</h1>
+        <h1>Incident Report</h1>
       </div>
     </div>
-    <form method="GET" action="#" class="d-flex justify-content-center">
-      <div class="form-check form-check-inline ">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"
-          required>
-        <label class="form-check-label" for="inlineRadio1">road accident</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"
-          required>
-        <label class="form-check-label" for="inlineRadio2">Repair</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-          required>
-        <label class="form-check-label" for="inlineRadio3">Manifestatión</label>
-      </div>
-      <button type="reset" class="btn btn-warning" onclick="mostrarAlerta()">send</button>
+    <form form = "formIncident" id="reportsForm" (ngSubmit)="save($event)">
+      
+        <input class="form-check-input" type="radio" name="Accident" value="option1">
+        <label class="form-check-label" for="inlineRadio1">Road Accident</label>
+        <td></td>
+        <input class="form-check-input" type="radio" name="Repair" value="option2">
+        <label class="form-check-label" for="inlineRadio2">Road Repair</label>
+        <td></td>
+        <input class="form-check-input" type="radio" name="Manifestation" value="option3">
+        <label class="form-check-label" for="inlineRadio3">Manifestation</label>
+      
+      
+    <p><b>Enter the report location on the map.</b></p>
+  
+    <iframe id="Map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217893.00024305488!2d-64.33648905211236!3d-31.42574742052076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1631044981787!5m2!1ses-419!2sar"
+      width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+
+      <button type="submit" class="btn btn-warning" onclick="mostrarAlerta()">Send</button>
 
     </form>
-
-    <p><b>enter the report location on the map.</b></p>
-  
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217893.00024305488!2d-64.33648905211236!3d-31.42574742052076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1631044981787!5m2!1ses-419!2sar"
-      width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
-
-  </div>

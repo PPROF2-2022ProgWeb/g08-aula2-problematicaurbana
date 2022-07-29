@@ -1,23 +1,23 @@
-
-*{
-  font-family:Georgia, 'Times New Roman', Times, serif ;
-  font-weight: 50;
-  font-size: 30px;
-}
-
-
-h1 {
-  background-color: rgb(226, 231, 70);
-  display: inline-block;
-  padding: 30px;
-  box-sizing: border-box;
+/*TITULO DE REPORTES*/
+h1{
+  font-family:'Kant',sana-serif;
+  margin-top: 1rem;
   text-align: center;
-  margin-bottom: 15px;
-
+  text-shadow:2px 2px #ababab ;
+  
 }
+/*BOTON DE ENVIO*/
+
   button{
-border-radius: 35px;
-border: 6px solid rgb(176, 255, 58);
+    background-color: #FFB366;
+border-radius: 10px;
+border-color:#FFB366;
+border-width: 1px;
+font-family:'Kanit', sans-serif;
+font-size: 150%;
+font-weight: bold;
+width: 25%;
+height: 10%;
  }
 p{
   text-align: center;

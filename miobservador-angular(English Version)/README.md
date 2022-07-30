@@ -27,6 +27,7 @@ miobservador-angular(English Version)\mi-observador\src\app\pages
 
 Note: The names of the files that are still in Spanish is because modifying them could cause problems in the code developed in the modules.
 
+Also, you can see a video with a sample following this link: https://youtu.be/3Lia2LpUvPw
 
 Old Project (Spanish): 
 

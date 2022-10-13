@@ -47,11 +47,13 @@ h1{
    margin-left: 15%;
  }
  
- #btn-login {
-  font-weight: bold;
+ button {
+  background-color: #FFB366;
+  border-radius: 10px;
+  border-color: #FFB366;
   border-width: 1px;
-  font-size:150%;
-  background-color: #ffddbb;
+  font-family: 'Kanit', sans-serif;
+  font-size: 150%;
   font-weight: bold;
   width: 25%;
   height: 10%;
@@ -59,14 +61,12 @@ h1{
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  border-radius: 10px;
-
+  
 }
 
-#btn-login:hover{
+button:hover{
   background-color: darkorange;
   cursor: pointer;
 }
- 
 
  

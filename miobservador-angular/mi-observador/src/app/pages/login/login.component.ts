@@ -17,6 +17,10 @@ export class LoginComponent implements OnInit {
   resultado!: string;
   submitted = false;
 
+ 
+    isDone = true;
+ 
+
 
   constructor(private fb: FormBuilder) {
     this.createForm();
@@ -28,7 +32,7 @@ export class LoginComponent implements OnInit {
       email:       new FormControl('', [Validators.required,
                                         Validators.email,
                                        ]),
-      contrasenia: new FormControl('', [Validators.maxLength(8),
+      password: new FormControl('',    [Validators.maxLength(8),
                                         Validators.minLength(8),
                                         Validators.required])
                                         });
@@ -37,7 +41,10 @@ export class LoginComponent implements OnInit {
     this.UsuarioForm.controls["email"].valueChanges.subscribe(data => {
                               console.log(data);
                                         });
-                                      }
+    this.UsuarioForm.controls["password"].valueChanges.subscribe(data => {
+                                          console.log(data);
+                                        });
+              }
                      
   onSubmit() {
     this.submitted = true;
@@ -48,7 +55,7 @@ export class LoginComponent implements OnInit {
                                       
 get email() { return this.UsuarioForm.get('email'); }
 
-get contrasenia() { return this.UsuarioForm.get('contrasenia'); } 
+get password() { return this.UsuarioForm.get('password'); } 
                                         
 get f() {return this.UsuarioForm.controls; }
 

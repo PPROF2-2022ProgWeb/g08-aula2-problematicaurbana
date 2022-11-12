@@ -12,14 +12,21 @@ h1{
    font-family: 'Kanit', sans-serif;
    text-align: center;
 }
+
+h5{
+  margin-top: 0.25rem;
+  margin-left: 25%;
+}
 /*campos del formulario*/
  p{
-   margin-top: 1rem;
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
    font-size:medium;
    font-family: 'Kanit', sans-serif;
    text-align: center;
    font-weight: 600;
-   width: 100%;
+   width: 250%;
+   margin-left: 25%;
  }
  
  em{
@@ -27,10 +34,13 @@ h1{
  }
  
  input {
-   font-size: large;
-   font-weight: 400;
-   width: 50%; 
-   border-radius: 10px; 
+    font-size: large;
+    font-weight: 400;
+    width: 50%; 
+    border-radius: 10px; 
+    margin-left: 25%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
  }
 
  option{

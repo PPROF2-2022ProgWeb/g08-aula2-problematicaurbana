@@ -17,7 +17,8 @@ import javax.persistence.Column;
 
 public class cuenta {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)  
+	@GeneratedValue(strategy = GenerationType.AUTO)  
+	
 	@Column(name="idCuenta")
     private Integer idCuenta;
 	 

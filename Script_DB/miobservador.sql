@@ -32,7 +32,7 @@ CREATE TABLE `alumnos` (
   `nombre` varchar(25) NOT NULL,
   `apellido` varchar(25) NOT NULL,
   `DNI` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `alumnos`
@@ -56,7 +56,7 @@ CREATE TABLE `articulo` (
   `articulo` varchar(45) NOT NULL,
   `precio` float DEFAULT NULL,
   `articulocol` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -66,7 +66,7 @@ CREATE TABLE `articulo` (
 
 CREATE TABLE `ciudad` (
   `idCiudad` int NOT NULL,
-  `nombreCiudad` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `nombreCiudad` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `idProvincia` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
@@ -270,7 +270,7 @@ CREATE TABLE `cuenta_estado` (
   `idCuentaEstado` int NOT NULL,
   `estado` varchar(25) NOT NULL,
   `descripcion` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `cuenta_estado`
@@ -291,7 +291,7 @@ CREATE TABLE `cuenta_origen` (
   `idCuentaOrigen` int NOT NULL,
   `origen` varchar(25) NOT NULL,
   `descripcion` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `cuenta_origen`
@@ -311,7 +311,7 @@ INSERT INTO `cuenta_origen` (`idCuentaOrigen`, `origen`, `descripcion`) VALUES
 CREATE TABLE `cuenta_tipo` (
   `idTipoCuenta` int NOT NULL,
   `TipoCuenta` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `cuenta_tipo`
@@ -333,7 +333,7 @@ CREATE TABLE `evento` (
   `estado` tinyint(1) DEFAULT NULL,
   `idRegistro` int NOT NULL,
   `idAdvertencia` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -344,7 +344,7 @@ CREATE TABLE `evento` (
 CREATE TABLE `evento_advertencia` (
   `idAdvertencia` int NOT NULL,
   `mensaje` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -359,7 +359,7 @@ CREATE TABLE `evento_registro` (
   `fechayhora` datetime DEFAULT NULL,
   `idCuenta` int NOT NULL,
   `idTipoEvento` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -371,7 +371,7 @@ CREATE TABLE `evento_tipo` (
   `idTipoEvento` int NOT NULL,
   `nombreEvento` varchar(25) NOT NULL,
   `descripcion` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -388,7 +388,7 @@ CREATE TABLE `factura` (
   `impuesto` float DEFAULT NULL,
   `fechaFactura` date DEFAULT NULL,
   `vendedor` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -399,7 +399,7 @@ CREATE TABLE `factura` (
 CREATE TABLE `formapago` (
   `idFormaPago` int NOT NULL,
   `FormaPago` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -409,7 +409,7 @@ CREATE TABLE `formapago` (
 
 CREATE TABLE `hibernate_sequence` (
   `next_val` bigint DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `hibernate_sequence`
@@ -431,7 +431,7 @@ CREATE TABLE `pedido` (
   `Estado` varchar(45) NOT NULL,
   `idCuentaPedido` int DEFAULT NULL,
   `idArticuloPedido` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -442,7 +442,7 @@ CREATE TABLE `pedido` (
 CREATE TABLE `provincia` (
   `idProvincia` int NOT NULL,
   `nombreProvincia` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `provincia`
@@ -484,7 +484,7 @@ CREATE TABLE `stock` (
   `cantidad` int NOT NULL,
   `fechaIngreso` date DEFAULT NULL,
   `idArticuloStock` int DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -495,7 +495,7 @@ CREATE TABLE `stock` (
 CREATE TABLE `tipocomprobante` (
   `idtipoComprobante` int NOT NULL,
   `tipoComprobante` varchar(45) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Índices para tablas volcadas

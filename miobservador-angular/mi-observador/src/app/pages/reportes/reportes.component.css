@@ -4,7 +4,6 @@ h1{
   margin-top: 1rem;
   text-align: center;
   text-shadow: 2px  2px #ABABAB;
-  margin-bottom: 1rem;
 }
 
 
@@ -21,35 +20,12 @@ font-weight: bold;
 width: 25%;
 height: 10%;
 display: block;
-margin: 0 auto;
 margin-top: 2rem;
 margin-bottom: 4rem;
  }
- button:hover{
-  background-color: darkorange;
-  cursor: pointer;
- }
-
 p{
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;  
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-size: 150%;
-  font-weight: bold;    
-}
-form{
-border-style: outset;
-border-color: #ffb366;
-width: 70%;
-margin-bottom: 2rem;
-margin-left: 15%;
-align-items: center;
-text-align: center;
-}
-.form-check-input{
-margin-top: 0.5rem;
-margin-bottom: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;       
 }
 
  

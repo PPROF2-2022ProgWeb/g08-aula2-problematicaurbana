@@ -2,37 +2,19 @@
 
 <h2>Inicie sesión</h2>
 
-<form [formGroup]="UsuarioForm" (ngSubmit)="onSubmit()" novalidate>
-    <h5>Correo Electrónico*</h5>
-    <input type="email" class="form-control" formControlName="email" id="email"  placeholder="Ingrese un correo electrónico" 
-        [ngClass]="{ 'is-invalid': submitted &&f['email'].errors }"> 
-    <div *ngIf="submitted && f['email'].errors" class="invalid-feedback" class="col-sm-3 text-danger">
-    <div *ngIf = "email?.errors?.['required']">
-    <p>Se requiere un correo electrónico</p>
-    <div *ngIf = "email?.errors?.['pattern']">
-    <p>Correo electrónico inválido</p>
-    </div>
-    </div> 
-    </div>
-     
-    <h5>Contraseña *</h5>
-    <input type="password" class="form-control" formControlName="password" id="password" placeholder="Ingrese una contraseña"
-    [ngClass]="{ 'is-invalid': submitted &&f['password'].errors } " >
-     
-    <div *ngIf="submitted && f['password'].errors" class="invalid-feedback" class="col-sm-3 text-danger" >
-    <div *ngIf = "password?.errors?.['required']">
-    <p>Se requiere una contraseña</p>
-    <div *ngIf = "password?.errors?.['pattern']">
-    <p>Contraseña incorrecta</p>
+<form form = "form" (ngSubmit)="save($event)">
+    <p>
+        Correo Electrónico* <br/>
+        <input type="email" formControlName="email">
+    </p>
+    <p>
+        Contraseña *<br/>
+        <input type="password" formControlName="contrasenia">
+    </p>  
+
+    <button type="submit" id="btn-login" class="btn btn-login">Iniciar sesión</button>
+</form>
     
-    </div>
-    </div>
-    </div>
-   
 
-    <button type="submit" class="btn btn-success btn-block" >Iniciar sesión</button>
-        
- </form>
- 
-
-
+  
+    

@@ -12,10 +12,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.Grupo8.miObservador.Cuenta;
+import com.Grupo8.miObservador.cuentaServicio;
+
 @SuppressWarnings("unused")
 @RestController
+@CrossOrigin(origins={"*"})
 @RequestMapping("/api")
 
 public class CuentaControlador {
 
+	@Autowired
+	 private cuentaServicio cuentaService;
+ 
+	 @GetMapping("/cuenta")
+	    public List<Cuenta> listar()
+	    {
+	        return cuentaServicio.findAll();
+	    }
+	
 }

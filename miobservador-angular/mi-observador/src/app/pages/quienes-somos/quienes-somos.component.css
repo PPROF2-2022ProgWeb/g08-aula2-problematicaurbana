@@ -1,12 +1,19 @@
 main{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image: url(https://cdn.pixabay.com/photo/2021/03/30/03/06/hands-6135743_960_720.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    /*background-size: 100rem;*/
+    /*height: 800px;*/
+    /*display: flex;/*
+    /*flex-direction: column;
+    justify-content: center;*/
     align-items: center;
   }
 
 .card-img-top{
+
   text-align: center;
   margin: 10px auto;
   width: 100px;
@@ -15,40 +22,20 @@ main{
 }
 
 .card{
-  background-color: rgba(226, 226, 226, 0.205);
+  width: 90%;
+  margin: 10px auto;
+  margin-bottom: 35px;
+  margin-top: 30px;
+  background-color: rgba(226, 226, 226, 0.87);
+}
+
+.card-text{
+  font-weight: bold !important;
 }
 
 .subtitulo, .card-body, .card-tittle, .card-text{
   text-align:center;
 
-}
-
-#titulo {
-    color:orange;
-    text-align: center;
-    text-shadow: 0.1em 0.1em 0.05em #333;
-}
-
-#texto {
-
-font-family: 'Kanit', sans-serif;
-text-align: center;
-
-}
-
-#texto2 {
-
-font-family: 'Kanit', sans-serif;
-text-align: center;
-font-weight:bolder;
-color:coral;
-
-}
-
-img{
-  width: 500;
-  height: 500px;
-  filter: drop-shadow(0 3px 5px rgba(172, 168, 168, 0.7))
 }
 
 .linkedin-img{
@@ -59,4 +46,24 @@ img{
   margin-right: auto;
   margin-bottom: 15px;
   display: block;
+}
+
+.card-img{
+  width: 1000px;
+  height: 500px;
+}
+
+.subtitulo{
+  color: #ff9100;
+  text-shadow: 2px 2px 2px black;
+}
+
+.img-fluid{
+  height: 100%;
+}
+
+h1, h3{
+  text-align: center;
+  color:#ff9100;
+  text-shadow: 2px 2px 2px black;
 }

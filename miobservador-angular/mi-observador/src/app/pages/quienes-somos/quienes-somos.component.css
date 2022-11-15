@@ -27,6 +27,7 @@ main{
   margin-bottom: 35px;
   margin-top: 30px;
   background-color: rgba(226, 226, 226, 0.87);
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.219);
 }
 
 .card-text{

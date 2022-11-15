@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -90,19 +91,22 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           }
         }
       }
     }
+<<<<<<< HEAD
+=======
   },
   "cli": {
-<<<<<<< HEAD
-    "analytics": "215cfd34-2118-4bbd-b9ef-4f38ae54d943"
-=======
-    "analytics": false
->>>>>>> fe277d1279408eb056c3e90750cf5b645777b76f
+    "analytics": "cb5d022f-6f04-46ff-8941-9f3bf299e71c"
+>>>>>>> a3ab9ef1f9ee33d4dfb43e0e3a51408644c5f40a
   }
+ 
 }

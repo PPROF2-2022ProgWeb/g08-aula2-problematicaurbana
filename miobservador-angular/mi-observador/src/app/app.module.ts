@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,12 +22,17 @@ const rutas:Routes=[
 {path:'reportes',component:ReportesComponent},
 {path:'login',component:LoginComponent},
 {path:'registrarse',component:RegistrarseComponent},
-{path:'donaciones',component:DonacionesComponent},
+{path:'donaciones',component:DonacionesComponent}
+
 ];
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -33,9 +40,14 @@ const rutas:Routes=[
     LayoutsModule,
     PagesModule,
     RouterModule.forRoot(rutas),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+ 
+}
+

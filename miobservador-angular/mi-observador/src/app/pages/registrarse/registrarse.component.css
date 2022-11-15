@@ -1,6 +1,5 @@
 /*titulos formulario de registro de usuario*/
-
-
+  
 h1{
   font-family: 'Kanit', sans-serif;
   margin-top: 1rem;
@@ -9,18 +8,21 @@ h1{
 }
 
 h3{
-
+  
   font-family: 'Kanit', sans-serif;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+<<<<<<< HEAD
+=======
 
 h5{
   margin-top: 0.25rem;
   text-align:center;
 }
 
+>>>>>>> a3ab9ef1f9ee33d4dfb43e0e3a51408644c5f40a
 /*campos del formulario*/
 
 
@@ -29,24 +31,35 @@ em{
 }
 
 input {
-  text-align:center;
   font-size: large;
   font-weight: 400;
-  width: 70%;
-  border-radius: 10px;
+  width: 70%; 
+  border-radius: 10px; 
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 15%;
 }
+<<<<<<< HEAD
+p{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size:medium;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  margin-left: 15%;
+  
+}
+=======
 
 /* p{
-
+  
   font-size:medium;
   font-family: 'Kanit', sans-serif;
   font-weight: 400;
 
 } */
 
+>>>>>>> a3ab9ef1f9ee33d4dfb43e0e3a51408644c5f40a
   /*text-align: 60%;
   font-weight: 600;
   width: 250%;
@@ -62,10 +75,16 @@ form{
   border-style:outset;
   border-color: #FFB366;
   width: 50%;
+<<<<<<< HEAD
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 25%;
+=======
   /*margin-top: 1rem;
   margin-bottom: 2rem;
   margin-left: 25%;*/
   margin: 2rem auto;
+>>>>>>> a3ab9ef1f9ee33d4dfb43e0e3a51408644c5f40a
   text-align: center;
 }
 /*Botones W and H con % hasta solucioar responsive*/

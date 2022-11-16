@@ -36,7 +36,7 @@ em{
 }
 
 article{
-  width: 280px;
+  width: 240px;
   height: 300px;
  -webkit-box-shadow: 5px 5px 15px 5px #ABABAB;
   box-shadow: 5px 5px 15px 5px #ABABAB;
@@ -74,7 +74,7 @@ button:hover{
 @media (max-width:900px){
 
   h1{
-    font-size:100%; 
+    font-size:100%;
   }
 
   p{
@@ -91,4 +91,12 @@ button:hover{
     margin-bottom: 4rem;
   }
 
+}
+
+a{
+  text-decoration: none;
+}
+
+button:hover {
+  color: #ffffff;
 }

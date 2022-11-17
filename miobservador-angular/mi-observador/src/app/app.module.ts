@@ -3,7 +3,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import {HttpClientModule} from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +17,7 @@ import { PagesModule } from './pages/pages.module';
 import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
 import { RegistrarseComponent } from './pages/registrarse/registrarse.component';
 import { ReportesComponent } from './pages/reportes/reportes.component';
+
 
 const rutas:Routes=[
 {path:'',component:InicioComponent},
@@ -42,7 +45,10 @@ const rutas:Routes=[
     RouterModule.forRoot(rutas),
     ReactiveFormsModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
